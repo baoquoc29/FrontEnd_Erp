@@ -9,8 +9,8 @@
         </a>
     </li>
 
-    <li class="sidebar-item <?php echo (isset($_GET['page']) && $_GET['page'] == 'chamcong') ? 'active' : ''; ?>" id="chamcong-item">
-        <a class="sidebar-link" href="?page=chamcong">
+    <li class="sidebar-item <?php echo (isset($_GET['page']) && $_GET['page'] == 'material_warehouse') ? 'active' : ''; ?>" id="chamcong-item">
+        <a class="sidebar-link" href="?page=material_warehouse">
             <i class="align-middle" data-feather="clock"></i>
             <span class="align-middle">Quản lý nguyên liệu</span>
         </a>

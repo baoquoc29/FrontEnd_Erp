@@ -30,6 +30,7 @@ if (!empty($searchKeywords)) {
                 <th>#</th>
                 <th>Mã Kho Sản Phẩm</th>
                 <th>Tên Sản Phẩm</th>
+                <th>Loại</th>
                 <th>Trọng Lượng</th>
                 <th>Giá Tiền</th>
                 <th>Ngày Nhập</th>
@@ -45,6 +46,8 @@ if (!empty($searchKeywords)) {
                         <td><?= (int)$index + 1 ?></td>
                         <td><?= htmlspecialchars($productWarehouse->getProductWarehouseId()) ?></td>
                         <td><?= htmlspecialchars($productWarehouse->getProductDTO()->getProductName()) ?></td>
+                        <td><?= htmlspecialchars($productWarehouse->getProductDTO()->getProductType()) ?></td>
+                        
                         <td><?= htmlspecialchars($productWarehouse->getProductDTO()->getWeight() . ' ' . $productWarehouse->getProductDTO()->getUnit()) ?></td>
 
                         <td><?= htmlspecialchars($productWarehouse->getProductDTO()->getUnitPrice()) . '' .'VNĐ' ?></td>
@@ -62,6 +65,8 @@ if (!empty($searchKeywords)) {
                         <td><?=  1 ?></td>
                         <td><?= htmlspecialchars($productWarehouse->getProductWarehouseId()) ?></td>
                         <td><?= htmlspecialchars($productWarehouse->getProductDTO()->getProductName()) ?></td>
+                        <td><?= htmlspecialchars($productWarehouse->getProductDTO()->getProductType()) ?></td>
+                        
                         <td><?= htmlspecialchars($productWarehouse->getProductDTO()->getWeight() . ' ' . $productWarehouse->getProductDTO()->getUnit()) ?></td>
 
                         <td><?= htmlspecialchars($productWarehouse->getProductDTO()->getUnitPrice()) . '' .'VNĐ' ?></td>
